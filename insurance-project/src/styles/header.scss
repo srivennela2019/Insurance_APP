@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+header{
+    width:100%;
+    background:$header-background;
+    display:flex;
+    .nav{
+        display:flex;
+        flex-wrap:nowrap;
+        list-style:none;
+    }
+    li{
+        padding:2rem;
+        color:$header-text;
+        background:none;
+        transition:background 0.2s ease, color 0.2s ease;
+        line-height:2rem;
+        cursor:pointer;
+        &:hover, &:active, &.active{
+            background:$header-button-hover;
+            color:$header-text-hover;
+        }
+    }
+    svg{
+        display:inline-block;
+        widows: 1.4rem !important;
+        height: 1.4rem !important;
+        margin:0.1rem 1rem 0.1rem 0;
+    }
+    .logo{
+        padding:1.3rem;
+        background:none;
+        transition:background 0.2s ease;
+        cursor:pointer;
+        &:hover, &:active{
+            background:$header-button-hover;
+        }
+        img{
+            width:200px;
+        }
+    }
+    .page-title{
+        margin-left:auto;
+        display:block;
+        padding:2rem;
+        font-size:1.4rem;
+        line-height:2rem;
+        font-weight:700;
+        color:$header-text;
+    }
+}

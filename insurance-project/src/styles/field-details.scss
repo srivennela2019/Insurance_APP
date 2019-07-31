@@ -1,0 +1,88 @@
+@import './variables.scss';
+
+.field-details-wrap{
+    height:calc(100% - 6rem);
+    width:100%;
+    display:flex;
+    overflow:auto;
+    .col-3{
+        width:calc(100% / 3);
+        height:100%;
+        padding:3vw;
+        position:relative;
+    }
+    .col-full{
+        width:100%;
+        height:100%;
+        padding:3vw;
+        position:relative;
+    }
+    h3{
+        font-size:2rem;
+        color:$main-text;
+        margin-bottom:2rem;
+        display:inline-block;
+        width:100%;
+        font-weight:700;
+    }
+    form{
+        margin-bottom:2rem;
+    }
+    span{
+        font-size:1.2rem;
+        color:$form-labels;
+        margin:1rem 0 2rem 0;
+        display:inline-block;
+        width:100%;
+        line-height:1.6rem;
+    }
+    p{
+        color:$main-text;
+        margin-bottom:2rem;
+        display:inline-block;
+        width:100%;
+    }
+    ul{
+        margin-bottom:2rem;
+    }
+    li{
+        display:inline-block;
+        padding:1rem;
+        width:auto;
+        background:#ECEFF1;
+        margin-right:1rem;
+        margin-bottom:1rem;
+        cursor:pointer;
+        transition:background 0.2s ease;
+        &:hover, &:active{
+            background:$tags-hover;
+        }
+    }
+    h4{
+        margin-bottom:1rem;
+        display:inline-block;
+        font-size:1.4rem;
+        color:$form-labels;        
+    } 
+    .btn{
+        width:100%;
+        border:none;
+        padding:1rem;
+        font-weight:700;
+        text-align:center;
+        margin:0 0 1rem 0;
+        cursor:pointer;
+        &.secondary{
+            background:none;
+            transition:background 0.2s ease;
+            &:hover, &:active{
+                background:$secondary-hover;
+            }
+        } 
+    }
+    .group-button{
+        width:100%;
+        text-align:center;
+    }
+}
+

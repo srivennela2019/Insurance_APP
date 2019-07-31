@@ -1,0 +1,38 @@
+.field-type-wrap {
+  width: 100%;
+  padding: 2rem;
+  background: #fff;
+  margin-top: 2rem;
+  border: #CFD8DC 1px solid;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  transition: background 0.3s ease; }
+  .field-type-wrap.active {
+    background: #00838F; }
+    .field-type-wrap.active h3, .field-type-wrap.active span, .field-type-wrap.active p {
+      color: #fff; }
+  .field-type-wrap svg {
+    display: inline-block;
+    margin-right: 1rem; }
+  .field-type-wrap h3 {
+    font-size: 2rem;
+    color: #263238;
+    margin-bottom: 2rem;
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    transition: color 0.3s ease; }
+  .field-type-wrap span {
+    font-size: 1.4rem;
+    color: #607D8B;
+    margin-bottom: 1rem;
+    display: inline-block;
+    width: 100%;
+    transition: color 0.3s ease; }
+  .field-type-wrap p {
+    color: #263238;
+    margin-bottom: 2rem;
+    display: inline-block;
+    width: 100%;
+    transition: color 0.3s ease; }

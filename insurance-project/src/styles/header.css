@@ -1,0 +1,40 @@
+header {
+  width: 100%;
+  background: #006064;
+  display: flex; }
+  header .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style: none; }
+  header li {
+    padding: 2rem;
+    color: #B0BEC5;
+    background: none;
+    transition: background 0.2s ease, color 0.2s ease;
+    line-height: 2rem;
+    cursor: pointer; }
+    header li:hover, header li:active, header li.active {
+      background: #00838F;
+      color: #fff; }
+  header svg {
+    display: inline-block;
+    widows: 1.4rem !important;
+    height: 1.4rem !important;
+    margin: 0.1rem 1rem 0.1rem 0; }
+  header .logo {
+    padding: 1.3rem;
+    background: none;
+    transition: background 0.2s ease;
+    cursor: pointer; }
+    header .logo:hover, header .logo:active {
+      background: #00838F; }
+    header .logo img {
+      width: 200px; }
+  header .page-title {
+    margin-left: auto;
+    display: block;
+    padding: 2rem;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: #B0BEC5; }

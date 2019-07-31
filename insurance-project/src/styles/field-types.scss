@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+.field-type-wrap{
+    width:100%;
+    padding:2rem;
+    background:$card;
+    margin-top:2rem;
+    border:$main-borders 1px solid;
+    cursor:pointer;
+    border-radius:5px;
+    display:block;
+    transition:background 0.3s ease;
+    &.active{
+        background:$card-active;
+        h3, span, p{
+            color:$card-active-text;
+        }
+    }
+    svg{
+        display:inline-block;
+        margin-right:1rem;
+    }
+    h3{
+        font-size:2rem;
+        color:$main-text;
+        margin-bottom:2rem;
+        display:inline-block;
+        width:100%;
+        font-weight:700;
+        transition:color 0.3s ease;
+    }
+    span{
+        font-size:1.4rem;
+        color:$form-labels;
+        margin-bottom:1rem;
+        display:inline-block;
+        width:100%;
+        transition:color 0.3s ease;
+    }
+    p{
+        color:$main-text;
+        margin-bottom:2rem;
+        display:inline-block;
+        width:100%;
+        transition:color 0.3s ease;
+    }
+}
